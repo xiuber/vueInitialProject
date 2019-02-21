@@ -1,0 +1,23 @@
+/**
+ * Created with youde
+ * company:郑州优德
+ * author:zhanglifeng
+ * date:2018/3/1 0001 下午 2:47
+ * description:混合模式
+ */
+
+@mixin border-radius($radius:6px){
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  border-radius:$radius;
+}
+@mixin transform-rotate($deg){
+  -webkit-transform:rotate($deg);
+  -moz-transform:rotate($deg);
+  transform:rotate($deg);
+}
+@mixin transition($type,$fn,$time){
+  -webkit-transition:$type $fn $time;
+  -moz-transition:$type $fn $time;
+  transition:$type $fn $time;
+}

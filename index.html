@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <title></title>
+    <link href="//at.alicdn.com/t/font_459495_jm3vve3jsp7dgqfr.css" rel="stylesheet">
+    <style>
+      .coinImg{
+        animation: coinImg 3s linear 0s infinite;
+      }
+      .flyImg{
+        animation: flyImg 1s linear 0s alternate;
+      }
+      .flyText{
+        animation: flyText 1s linear 0s alternate;
+      }
+      @keyframes flyText {
+        0% {width: 0.5rem;height:.5rem;top:0px;left:45%;font-size: .2rem}
+        45% {width: 0.3rem;height:.3rem;top:100px;left:45%;font-size: .15rem}
+        75% {width: 0.1rem;height:.1rem;top:200px;left:45%;font-size: .1rem}
+        100% {width: 0rem;height:0rem;top:300px;left:45%;font-size: 0}
+      }
+      @keyframes flyImg {
+        0% {width: 0.5rem;height:.5rem;top:0px;left:45%;}
+        45% {width: 0.3rem;height:.3rem;top:100px;left:45%;}
+        75% {width: 0.1rem;height:.1rem;top:200px;left:45%;}
+        100% {width: 0rem;height:0rem;top:300px;left:45%;}
+      }
+      @keyframes coinImg {
+        0% {margin-top: 0rem;}
+        50% {margin-top: .35rem;}
+        100% {margin-top: 0rem;}
+      }
+      @keyframes ingText {
+        form {transform:rotate(0deg)}
+        to {transform:rotate(360deg)}
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script type="text/javascript">
+    (function(){
+      let html = document.documentElement;
+      let htmlW = html.clientWidth;
+      html.style.fontSize = htmlW/7.5+"px";
+    })()
+  </script>
+</html>
